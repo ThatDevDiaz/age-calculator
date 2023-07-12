@@ -5,9 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project Template</title>
     <link rel="stylesheet" href="/dist/output.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <div>Project Starter</div>
+  <body
+    class="bg-off-white flex justify-center items-center m-auto min-h-screen"
+  >
+    <!-- Main container -->
+
+    <div class="w-1/2 h-96 bg-white bottom rounded-3xl rounded-br-3xl">
+      <!-- Date and input fields -->
+
+      <div class="flex gap-8 ml-10 mt-10">
+        <div class="flex flex-col w-16">
+          <h2 id="day">DAY</h2>
+          <input value="" id="dayInput" class="bg-gray-200" />
+        </div>
+        <div class="flex flex-col w-16">
+          <h2 id="month">MONTH</h2>
+          <input value="" id="monthInput" class="bg-gray-200" />
+        </div>
+        <div class="flex flex-col w-16">
+          <h2 id="year">YEAR</h2>
+          <input value="" id="yearInput" class="bg-gray-200" />
+        </div>
+      </div>
+
+      <!-- Break and calcage button -->
+
+      <div class="flex justify-end mr-10">
+        <div class="container mx-auto">
+          <div class="border-t-2 border-gray-200 mt-5 ml-7"></div>
+        </div>
+        <button class="bg-purp rounded-full w-12 position">
+          <img src="/assets/icon-arrow.svg" alt="arrow button" />
+        </button>
+      </div>
+
+      <!-- Results -->
+
+      <div class="flex flex-col ml-16">
+        <div class="flex flex-row">
+          <span class="purple-text mr-10" id="yearsOld">--</span>
+          <h3 class="large-text">years</h3>
+        </div>
+        <div class="flex flex-row">
+          <span class="purple-text mr-10" id="monthsOld"> -- </span>
+          <h3 class="large-text">months</h3>
+        </div>
+        <div class="flex flex-row">
+          <span class="purple-text mr-10" id="daysOld"> -- </span>
+          <h3 class="large-text">days</h3>
+        </div>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

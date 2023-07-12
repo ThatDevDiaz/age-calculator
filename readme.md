@@ -1,1 +1,1 @@
-This is my project start template that comes with tailwind already setup and a vanilla JS file just to save time when starting new projects or challenges.
+Age calculator app I created to test my JS skills while utilizing tailwind for the first time in a small project.
