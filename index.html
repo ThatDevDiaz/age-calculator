@@ -16,23 +16,37 @@
     <div class="w-1/2 h-96 bg-white bottom rounded-3xl rounded-br-3xl max-w-xl">
       <!-- Date and input fields -->
 
-      <div class="flex gap-8 ml-10 mt-10">
+      <div class="flex gap-8 ml-10 mt-10 mb-2 text-xs tracking-widest">
         <div class="flex flex-col w-16">
-          <h2 id="day">DAY</h2>
-          <input value="" id="dayInput" class="bg-gray-200" />
+          <h2 id="day" class="text-gray-600 font-semibold pb-2">DAY</h2>
+          <input
+            value=""
+            id="dayInput"
+            class="bg-gray-200 h-10 w-20 rounded-l bg-slate-100 pl-2 font-extrabold text-xl"
+          />
         </div>
         <div class="flex flex-col w-16">
-          <h2 id="month">MONTH</h2>
-          <input value="" id="monthInput" class="bg-gray-200" />
+          <h2 id="month" class="text-gray-600 font-semibold pb-2">MONTH</h2>
+          <input
+            value=""
+            id="monthInput"
+            class="bg-gray-200 h-10 w-20 bg-slate-100 pl-2 font-extrabold text-xl"
+          />
         </div>
         <div class="flex flex-col w-16">
-          <h2 id="year">YEAR</h2>
-          <input value="" id="yearInput" class="bg-gray-200" />
+          <h2 id="year" class="text-gray-600 font-semibold pb-2">YEAR</h2>
+          <input
+            value=""
+            id="yearInput"
+            class="bg-gray-200 h-10 w-20 bg-slate-100 pl-2 font-extrabold text-xl"
+          />
         </div>
       </div>
 
       <!-- Break and calcAge button -->
-
+      <div id="errorMessage" class="text-xs text-red-500 ml-10 hidden">
+        Must be a valid date
+      </div>
       <div class="flex justify-end mr-10">
         <div class="container mx-auto">
           <div class="border-t-2 border-gray-200 mt-5 ml-7"></div>
@@ -44,7 +58,7 @@
 
       <!-- Results -->
 
-      <div class="flex flex-col ml-16">
+      <div class="flex flex-col ml-16 mt-6">
         <div class="flex flex-row">
           <span class="text-purple-500 mr-10 font-bold text-5xl" id="yearsOld"
             >--</span
