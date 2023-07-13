@@ -9,11 +9,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body
-    class="bg-off-white flex justify-center items-center m-auto min-h-screen"
+    class="bg-slate-200 flex justify-center items-center m-auto min-h-screen"
   >
     <!-- Main container -->
 
-    <div class="w-1/2 h-96 bg-white bottom rounded-3xl rounded-br-3xl">
+    <div class="w-1/2 h-96 bg-white bottom rounded-3xl rounded-br-3xl max-w-xl">
       <!-- Date and input fields -->
 
       <div class="flex gap-8 ml-10 mt-10">
@@ -31,13 +31,13 @@
         </div>
       </div>
 
-      <!-- Break and calcage button -->
+      <!-- Break and calcAge button -->
 
       <div class="flex justify-end mr-10">
         <div class="container mx-auto">
           <div class="border-t-2 border-gray-200 mt-5 ml-7"></div>
         </div>
-        <button class="bg-purp rounded-full w-12 position">
+        <button class="bg-purple-500 rounded-full w-12 position">
           <img src="/assets/icon-arrow.svg" alt="arrow button" />
         </button>
       </div>
@@ -46,16 +46,22 @@
 
       <div class="flex flex-col ml-16">
         <div class="flex flex-row">
-          <span class="purple-text mr-10" id="yearsOld">--</span>
-          <h3 class="large-text">years</h3>
+          <span class="text-purple-500 mr-10 font-bold text-5xl" id="yearsOld"
+            >--</span
+          >
+          <h3 class="text-5xl font-bold">years</h3>
         </div>
         <div class="flex flex-row">
-          <span class="purple-text mr-10" id="monthsOld"> -- </span>
-          <h3 class="large-text">months</h3>
+          <span class="text-purple-500 mr-10 font-bold text-5xl" id="monthsOld">
+            --
+          </span>
+          <h3 class="text-5xl font-bold">months</h3>
         </div>
         <div class="flex flex-row">
-          <span class="purple-text mr-10" id="daysOld"> -- </span>
-          <h3 class="large-text">days</h3>
+          <span class="text-purple-500 mr-10 font-bold text-5xl" id="daysOld">
+            --
+          </span>
+          <h3 class="text-5xl font-bold">days</h3>
         </div>
       </div>
     </div>
