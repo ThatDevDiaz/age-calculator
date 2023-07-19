@@ -8,10 +8,6 @@ const errorTextMonth = document.querySelector(`#month`);
 const errorTextYear = document.querySelector(`#year`);
 const errorMessage = document.querySelector(`#errorMessage`);
 
-let day = document.getElementById(`dayInput`).value;
-let month = document.getElementById(`monthInput`).value;
-let year = document.getElementById(`yearInput`).value;
-
 const errorFunc = function () {
   errorTextDay.style.color = `red`;
   errorTextMonth.style.color = `red`;
@@ -20,6 +16,9 @@ const errorFunc = function () {
 };
 
 const errorCheck = function () {
+  let day = document.getElementById(`dayInput`).value;
+  let month = document.getElementById(`monthInput`).value;
+  let year = document.getElementById(`yearInput`).value;
   if (day > 31) {
     return errorFunc();
   } else if (month > 12) {
