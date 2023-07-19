@@ -15,6 +15,13 @@ const errorFunc = function () {
   errorMessage.classList.remove(`hidden`);
 };
 
+const errorFixed = function () {
+  errorTextDay.style.color = ``;
+  errorTextMonth.style.color = ``;
+  errorTextYear.style.color = ``;
+  errorMessage.classList.add(`hidden`);
+};
+
 const errorCheck = function () {
   let day = document.getElementById(`dayInput`).value;
   let month = document.getElementById(`monthInput`).value;
@@ -26,6 +33,7 @@ const errorCheck = function () {
   } else if (year > 2023 || year < 1920) {
     return errorFunc();
   } else {
+    errorFixed();
     let yearAge = 2022 - year;
     let monthAge = 12 - month;
     let dayAge = 30 - day;
